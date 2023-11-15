@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="funPage">
+
+<section>
+<!-- Sidebar -->
+<div class="navbar" id="hoved-navbar">
+    <a href="javascript:void(0);" tabindex="2" class="material-icons" onclick="closeMenu()">&times;</a>
+    <div>
+    <div class="desktop-logo">
+      <img class="logo" src="img/OsloMetLogo.png" alt="Oslometropolitan University's logo" />
+    </div>
+    <a href="index.html">Home</a>
+    <a href="studentLivetPage2.html">Studentlivet</a>
+    <a href="topicalPage3.html">Topical</a>
+    <a href="accessibilityPage4.html">Accessibility</a>
+    <a href="funPage5.html">Fun</a>
+  </div>
+</div>
+
+<div id="innpakning">
+
+    <div class="funButton">
+    <button class="navbar-button" tabindex="1" onclick="openMenu()">&#9776; MENU</button>
+    </div>
+
+    <div class="innloggings-skjema">
+
+         <form action="">
+            <h2 class="logginnTitle">Logg inn</h2>
+            <div class="input-felt">
+                <span class="ikon"><ion-icon name="mail-outline"></ion-icon></span>
+                <input type="epost" required>
+                <label>E-post</label>
+            </div>
+            <div class="input-felt">
+                <span class="ikon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <input type="passord" required>
+                <label>Passord</label>
+            </div>
+            <div class="husker-huskerIkke">
+                <label><input type="checkbox"> Husk meg</label>
+                <a href="#">Glemt Passort?</a>
+            </div>
+            <div class="sendInnButton">
+            <button type="sendInn">Logg inn</button>
+            </div>
+            <div class="nyBruker">
+                <p>Har du ikke en bruker?
+                <a href="#">Registrer deg</a></p>
+            </div>
+         </form>
+
+    </div>
+
+</div>
+
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript" src="navbar.js"></script>
+
+</body>
+
+</html>

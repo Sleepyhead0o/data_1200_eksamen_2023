@@ -1,0 +1,427 @@
+/* Felles CSS - start - */ 
+
+body {
+    margin: 0;
+    font-family: Copperplate, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-stretch: 100%;
+    background-color: white;
+    line-height: 1.5em;
+    box-sizing: border-box;
+}
+
+hr {
+    border-top: 6px solid #161b20;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    margin-top: 16px;
+    line-height: 1.5;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    vertical-align: baseline;
+    justify-content: center;
+}
+
+article {
+    margin-bottom: 5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.mega-div p{
+    line-height: 2.0;
+}
+  
+.mega-div {
+    justify-content: center;
+    margin-bottom:3rem;
+}
+/* Kode for å stoppe hyperlenkene i kildelisten i å flyte over når sidene skaleres til mindre skjermer */
+
+.kildebokser > h3 {
+    text-decoration: underline;
+}
+  
+figcaption{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+  
+.kildebokser {  
+    overflow-wrap: break-word;    
+    word-break: break-word;
+    hyphens: auto;  
+    /* Kode fra https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+}
+/* Felles CSS - end - */ 
+
+/* Navigasjonsbar */
+  /* CSS kode fra W3S - off-canvas menu - endret og lagt til nye funksjoner*/  
+  /* Link: https://www.w3schools.com/howto/howto_js_off-canvas.asp */
+
+.navbar {
+    overflow-x: hidden;
+    background-color: #161b20;
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+img.logo {
+    width: auto;
+}
+
+.desktop-logo {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 24.5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #f1e36f;
+    opacity: 70%;
+    border-radius: 5px;
+}
+
+.navbar .material-icons {
+    font-size: 32px;
+    margin-left: 50px;
+    top: 0;
+    right: 24px;
+    position: absolute;
+}
+
+.navbar-button{
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    border: 0rem;
+}
+
+#innpakning {
+    padding: 1rem;
+    transition: margin-left .5s;
+}
+
+/* Footer */
+
+footer {
+    background-color: #161b20;
+    color: white;
+}
+
+footer h2 {
+    color: #f1e36f;
+}
+
+.footer-grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    text-align: left;
+    letter-spacing: 4px;
+    font-size: smaller;
+    margin: 25px 60px 75px 60px;
+}
+
+.epost a {
+    color: white;
+}
+
+.epost a:hover {
+    color: #f1e36f;
+}
+
+.kart {
+    width: 500px;
+    height: 200px;
+    border: 0;
+}
+
+/* Welcome Page */
+
+.bilde-container{
+    display: flex;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#oslometUni {
+    border: 6px solid#161b20;
+    border-width: absolute;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
+}
+
+.frontPageTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+}
+
+.frontPageTitle h1 {
+    font-size: 57px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    color: #161b20;
+    background-color: whitesmoke;
+    opacity: 90%;
+    cursor: pointer;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #f1e36f;
+}
+
+/* Topical Page */
+
+.mega-div {
+    margin: 5%;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+}
+
+.tekstbokser{
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+.bildet1 {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.topicalTitle h1 {
+    position:relative; 
+    font-size:60px; 
+    font-weight:700;  
+    letter-spacing:0px; 
+    text-transform:uppercase; 
+    text-align:center; 
+}
+
+.oblig-tittel{
+    font-size: 30px;
+    font-weight:100;
+    justify-content: space-between;
+}
+
+.innhold-tittel{
+    font-size: 20.8px;
+}
+
+.hovedUnderOverskrift{
+    text-decoration: underline;
+}
+
+/* FunPage CSS */
+
+/** Scriptene i fun.html er kopiert fra https://ionic.io/ionicons/usage **/
+/** <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> **/
+/** <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> **/
+
+/** inon-icon kodene i fun.html er kopiert fra https://ionic.io/ionicons **/
+/** <ion-icon name="mail-outline"></ion-icon></span> **/
+/** <ion-icon name="lock-closed-outline"></ion-icon> **/
+
+section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url(CampusSommer-75.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: animateBgPx 5s linear infinite;
+}
+
+.funButton button {
+    display: flex;
+    position: absolute;
+    left: 0;
+    color: white;
+}
+
+@keyframes animateBgPx {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.innloggings-skjema {
+    display: flex;
+    position: relative;
+    height: 450px;
+    width: 400px;
+    background: transparent;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+}
+
+.logginnTitle {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+.input-felt {
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 3px solid white;
+    position: relative;
+}
+
+.input-felt label {
+    position: absolute;
+    font-size: 1em;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: white;
+
+}
+
+.input-felt input:focus~label,
+.input-felt input:valid~label{
+    top: -5px;
+}
+
+.input-felt input {
+    background: transparent;
+    padding: 0 40px 0 5px;
+    height: 50px;
+    width: 100%;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.input-felt .ikon {
+    right: 8px;
+    position: absolute;
+    line-height: 57px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.husker-huskerIkke {
+    display: flex;
+    color: white;
+    font-size: 0.9em;
+    margin: -15px 0 15px;
+    justify-content: space-between;
+}
+
+.husker-huskerIkke label input {
+    margin-right: 3px;
+}
+
+.husker-huskerIkke a {
+    color: white;
+}
+
+.husker-huskerIkke a:hover{
+    text-decoration: underline;
+}
+
+.sendInnButton button {
+    background: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 40px;
+    font-size: 1em;
+    cursor: pointer;
+    color: #161b20;
+    font-weight: 500;
+}
+
+.nyBruker {
+    color: white;
+    margin: 25px 0 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.nyBruker p a {
+    color: white;
+    font-weight: 700;
+}
+
+.nyBruker p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 700px) {
+    .navbar a:not(:first-child) {display: none;}
+    #navbar-button {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive #navbar-button{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
+
+
