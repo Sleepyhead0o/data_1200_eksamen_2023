@@ -1,2 +1,3 @@
 # data_1200_eksamen_2023
 data_1200_eksamen_2023
+Push
