@@ -229,12 +229,6 @@ footer h2 {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.bildetAccessibility1 {
-    float:right;
-    width:30%;
-    height:30%;
-}
-
 .topicalTitle h1 {
     position:relative; 
     font-size:60px; 
@@ -400,6 +394,18 @@ section {
 
 .nyBruker p a:hover {
     text-decoration: underline;
+}
+
+/* Accessibility CSS */
+
+.h2Accessibility {
+    font-size: 1.2em;
+}
+
+.bildetAccessibility1 {
+    float:right;
+    width:35%;
+    height:35%;
 }
 
 /* Responsive CSS */

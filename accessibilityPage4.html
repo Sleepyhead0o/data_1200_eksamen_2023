@@ -40,7 +40,7 @@
     <article>
       <div class="mega-div">
         <div id="tekst-nr-1">
-            <h2 class="hovedUnderOverskrift">For å sikre god accessibility har vi:</h2>
+            <h2 class="h2Accessibility">For å sikre god accessibility har vi:</h2>
             <ul class="tekstbokser">
                 <li><p><b>Semantisk html:</b> Vi bruker semantiske tagger som 	&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt; og &lt;footer&gt; på riktig måte. For å hjelpe skjerm lesere og andre hjelpe teknologier med å tolke strukturen og innholdet på siden vår.</p></li>
                 <li><p><b>Responsivt design:</b> Vi har designet nettsiden vår slik at den er responsiv, at den kan tilpasse seg ulike skjermstørrelser og oppløsninger. Dette er til fordel for brukere med forskjellige enheter (pc og mobil) og de som trenger å justere tekststørrelsen for bedre lesbarhet (de som ikke ser så godt). </p></li>
@@ -50,7 +50,7 @@
         </div>
 
         <div id="tekst-nr-2">
-          <h2>Accessibility test: </h2>
+          <h2 class="h2Accessibility">Accessibility test: </h2>
             <p>Vi testet siden vår på googlechrome Lighthouse, og forbedret nettsiden vår. HTML-sidene vi testet er «WelcomePage», «TopicalPage» og «FunPage». Resultatet av dette er: </p>
             <ul class="tekstbokser">
                 <li><p>Problemet accessibility testen fanget opp på alle HTML-filene på nettsiden vår er «Some elements have a [tabindex] value greater than 0». Tabindex-attributtet i HTML brukes til å spesifisere rekkefølgen elementer navigeres i når brukeren trykker på "Tab". Tabindex-verdier over 0 bestemmer navigasjons rekkefølgen. Å angi tabindex-verdier manuelt kan forstyrre den naturlige navigasjons rekkefølgen som bestemmes av dokument strukturen. Den følger rekkefølgen på elementene i HTML-filen, og er ofte mer intuitiv for brukere. Vi kodet tabinex-en med samme rekkefølge som elementene i HTML-filen, og er dermed overflødig, altså strengt tatt ikke nødvendig. På grunn av dette bestemte vi oss å fjerne alle tabindex-attributtene.</p></li>
@@ -65,7 +65,7 @@
         </div>
 
         <div id="kildeliste" class="kildebokser">
-            <h2> Referanseliste </h2>
+            <h2 class="h2Accessibility"> Referanseliste </h2>
             <ul>
                 <li><p>Tabindex fra mozilla developer guide: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex</a> sist hentet 16.november 2023 </p></li>
             </ul>
