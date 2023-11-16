@@ -412,8 +412,8 @@ section {
 
 .bildetAccessibility1 {
     float:right;
-    width:35%;
-    height:35%;
+    height: auto;
+    max-width: 50%;
 }
 #tekst-nr-1 #tekst-nr-2 #h2Accessibility ul li {
     margin-bottom: 40px;
@@ -441,6 +441,15 @@ section {
         float: none;
         display: block;
         text-align: left;
+    }
+}
+
+/* Responsive accessibility CSS */
+
+@media screen and (max-width: 900px) {
+    .bildetAccessibility1 {
+        height: auto;
+        max-width: 100%;
     }
 }
 
