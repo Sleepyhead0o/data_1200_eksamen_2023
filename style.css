@@ -252,6 +252,14 @@ footer h2 {
     text-decoration: underline;
 }
 
+#tekst-nr-1 ul li {
+    margin-bottom: 50px;
+}
+
+#tekst-nr-2 ul li {
+    margin-bottom: 50px;
+}
+
 /* FunPage CSS */
 
 /** Scriptene i fun.html er kopiert fra https://ionic.io/ionicons/usage **/
@@ -407,7 +415,7 @@ section {
     width:35%;
     height:35%;
 }
-#h2Accessibility ul li {
+#tekst-nr-1 #tekst-nr-2 #h2Accessibility ul li {
     margin-bottom: 40px;
 }
 
