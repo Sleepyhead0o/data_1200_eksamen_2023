@@ -407,6 +407,9 @@ section {
     width:35%;
     height:35%;
 }
+#h2Accessibility ul li {
+    margin-bottom: 40px;
+}
 
 /* Responsive CSS */
 
