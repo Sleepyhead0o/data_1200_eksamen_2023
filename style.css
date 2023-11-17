@@ -154,7 +154,7 @@ span {
 /* Footer CSS - start - */
 
 footer {
-    background-color: #161b20;
+    background-color: black;
     color: white;
 }
 
@@ -200,7 +200,7 @@ footer h2 {
 }
 
 #oslometUni {
-    border: 6px solid#161b20;
+    border: 6px solid black;
     border-width: absolute;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
 }
