@@ -50,7 +50,6 @@ article {
     justify-content: center;
     margin-bottom:3rem;
 }
-/* Kode for å stoppe hyperlenkene i kildelisten i å flyte over når sidene skaleres til mindre skjermer */
 
 .kildebokser > h3 {
     text-decoration: underline;
@@ -66,24 +65,38 @@ figcaption{
     word-break: break-word;
     hyphens: auto;  
     /* Kode fra https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+    /* Kode for å stoppe hyperlenkene i kildelisten i å flyte over når sidene skaleres til mindre skjermer */
 }
 /* Felles CSS - end - */ 
 
-/* Navigasjonsbar */
-  /* CSS kode fra W3S - off-canvas menu - endret og lagt til nye funksjoner*/  
-  /* Link: https://www.w3schools.com/howto/howto_js_off-canvas.asp */
+/* Navigasjonsbar CSS - start - */
+/* CSS kode fra W3S - off-canvas menu - endret og lagt til nye funksjoner*/  
 
-.navbar {
-    overflow-x: hidden;
-    background-color: #161b20;
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
     position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.sidebar {
     height: 100%;
-    width: 0;
-    top: 0;
-    left: 0;
+    width: 390px;
+    position: fixed;
     z-index: 1;
-    transition: 0.5s;
-    padding-top: 60px;
+    top: 0;
+    left: -390px;
+    background-color: black; 
+    overflow-x: hidden;
+    padding-top: 55px;
+    transition: 0.3s;
 }
 
 img.logo {
@@ -96,44 +109,49 @@ img.logo {
     text-align: center;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 30px;
+.sidebar a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 24.5px;
-    transition: 0.3s;
+    font-size: 25px;
+    color: white;
+    display: block;
 }
 
-.navbar a:hover {
-    background-color: #f1e36f;
-    opacity: 70%;
-    border-radius: 5px;
+.sidebar a:hover {
+    color: #a4a4a4;
 }
 
-.navbar .material-icons {
-    font-size: 32px;
-    margin-left: 50px;
-    top: 0;
-    right: 24px;
+.content {
+    margin-left: 0;
+    padding: 1px 16px;
+    transition: margin-left 0.3s;
+    margin-top: 40px;
+}
+
+.toggle-checkbox:checked + .toggle-label + .sidebar {
+    left: 0;
+}
+
+.toggle-checkbox:checked + .toggle-label + .sidebar + .content {
+    margin-left: 200px;
+}
+
+.toggle-label{
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+}
+
+span {
     position: absolute;
+    right: 0;
+    padding: 5px;
+    font-size: large;
 }
+/* Navigasjonsbar CSS - end - */
 
-.navbar-button{
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 30px;
-    border: 0rem;
-}
-
-#innpakning {
-    padding: 1rem;
-    transition: margin-left .5s;
-}
-
-/* Footer */
+/* Footer CSS - start - */
 
 footer {
     background-color: #161b20;
@@ -169,8 +187,9 @@ footer h2 {
     height: 200px;
     border: 0;
 }
+/* Footer CSS - end - */
 
-/* Welcome Page */
+/* Index CSS - start - */
 
 .bilde-container{
     display: flex;
@@ -210,8 +229,9 @@ footer h2 {
     border-style: solid;
     border-color: #f1e36f;
 }
+/* Index CSS - end - */
 
-/* Topical Page */
+/* Topical CSS - start - */
 
 .mega-div {
     margin: 5%;
@@ -259,16 +279,26 @@ footer h2 {
 #tekst-nr-2 ul li {
     margin-bottom: 50px;
 }
+/* Topical CSS - end - */
 
-/* FunPage CSS */
+/* Accessibility CSS */
 
-/** Scriptene i fun.html er kopiert fra https://ionic.io/ionicons/usage **/
-/** <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> **/
-/** <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> **/
+.h2Accessibility {
+    font-size: 1.2em;
+}
 
+.bildetAccessibility1 {
+    float:right;
+    height: auto;
+    max-width: 50%;
+}
+#tekst-nr-1 #tekst-nr-2 #h2Accessibility ul li {
+    margin-bottom: 40px;
+}
+/* Accessibility CSS - end - */
+
+/* Fun CSS - start - */
 /** inon-icon kodene i fun.html er kopiert fra https://ionic.io/ionicons **/
-/** <ion-icon name="mail-outline"></ion-icon></span> **/
-/** <ion-icon name="lock-closed-outline"></ion-icon> **/
 
 section {
     display: flex;
@@ -403,45 +433,34 @@ section {
 .nyBruker p a:hover {
     text-decoration: underline;
 }
+/* Fun CSS - end - */
 
-/* Accessibility CSS */
+/* Responsive CSS - start - */
 
-.h2Accessibility {
-    font-size: 1.2em;
-}
+/* Media query for Iphone 390 */
 
-.bildetAccessibility1 {
-    float:right;
-    height: auto;
-    max-width: 50%;
-}
-#tekst-nr-1 #tekst-nr-2 #h2Accessibility ul li {
-    margin-bottom: 40px;
-}
-
-/* Responsive CSS */
-
-@media screen and (max-width: 700px) {
-    .navbar a:not(:first-child) {display: none;}
-    #navbar-button {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive #navbar-button{
-        position: absolute;
-        right: 0;
-        top: 0;
+@media only screen and (max-width: 390px) {
+    .sidebar {
+        width: 100%;
+        left: -100%;
     }
 
-    .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
+    .toggle-checkbox:checked + .toggle-label + .sidebar {
+        left: 0;
     }
+
+    .toggle-checkbox:checked + .toggle-label + .sidebar + .content {
+        margin-left: 0;
+    }
+
+    .sidebar > a {
+        font-size: 44px;
+        padding: 30px;
+    }
+    .kart {
+        width: 100% !important;
+    }
+    
 }
 
 /* Responsive accessibility CSS */
@@ -452,6 +471,9 @@ section {
         max-width: 100%;
     }
 }
+/* Responsive accessibility CSS - end - */
+
+/* Responsive CSS - end - */
 
 
 
