@@ -13,32 +13,31 @@
 
 <body>
     
-    <hr>
-     <button class="navbar-button" onclick="openMenu()">&#9776; MENU</button>
-    <hr>
+<input type="checkbox" id="toggle-sidebar" class="toggle-checkbox">
+<label for="toggle-sidebar" class="toggle-label">&#9776; MENU</label>  
 
 <!-- Sidebar -->
-<div class="navbar" id="hoved-navbar">
-    <a href="javascript:void(0);" class="material-icons" onclick="closeMenu()">&times;</a>
-    <div>
+<div class="sidebar">
     <div class="desktop-logo">
-      <img class="logo" src="img/OsloMetLogo.png" alt="Oslometropolitan University's logo" />
+        <img class="logo" src="img/OsloMetLogo.png" alt="Oslometropolitan University's logo" />
     </div>
-    <a href="index.html">Home</a>
-    <a href="studentLivetPage2.html">Studentlivet</a>
-    <a href="topicalPage3.html">Topical</a>
-    <a href="accessibilityPage4.html">Accessibility</a>
-    <a href="funPage5.html">Fun</a>
-  </div>
+        <span>X</span>
+        <a href="index.html">Home</a>
+        <a href="studentLivetPage2.html">Student life</a>
+        <a href="topicalPage3.html">Topical</a>
+        <a href="accessibilityPage4.html">Accessibility</a>
+        <a href="funPage5.html">Fun</a>
 </div>
+<!-- END sidebar -->
 
-<div id="innpakning">
+<div class="content">
+    
 <!-- Header -->
 <header class="topicalTitle">
     <!-- Oblig1 DATA1100 -->
     <h1> Topical page </h1>
-
 </header>
+<!-- END header -->
 
 <main>
 
@@ -165,11 +164,9 @@
         </div>
     </div>
 </footer>
-
-<script type="text/javascript" src="navbar.js"></script>
-
+<!-- END footer -->
 </div>
-
+    
 </body>
 
 </html>
