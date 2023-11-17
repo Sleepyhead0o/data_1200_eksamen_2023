@@ -12,34 +12,99 @@
 </head>
 
 <body class="studentLivetPage">
-    <hr>
-     <button class="navbar-button" onclick="openMenu()">&#9776; MENU</button>
-    <hr>
+
+<input type="checkbox" id="toggle-sidebar" class="toggle-checkbox">
+<label for="toggle-sidebar" class="toggle-label">&#9776; MENU</label>    
 
 <!-- Sidebar -->
-<div class="navbar" id="hoved-navbar">
-    <a href="javascript:void(0);" class="material-icons" onclick="closeMenu()">&times;</a>
-    <div>
+<div class="sidebar">
     <div class="desktop-logo">
-      <img class="logo" src="img/OsloMetLogo.png" alt="Oslometropolitan University's logo" />
+        <img class="logo" src="img/OsloMetLogo.png" alt="Oslometropolitan University's logo" />
     </div>
-    <a href="index.html">Home</a>
-    <a href="studentLivetPage2.html">Studentlivet</a>
-    <a href="topicalPage3.html">Topical</a>
-    <a href="accessibilityPage4.html">Accessibility</a>
-    <a href="funPage5.html">Fun</a>
-  </div>
+        <span>X</span>
+        <a href="index.html">Home</a>
+        <a href="studentLivetPage2.html">Student life</a>
+        <a href="topicalPage3.html">Topical</a>
+        <a href="accessibilityPage4.html">Accessibility</a>
+        <a href="funPage5.html">Fun</a>
 </div>
+<!-- END sidebar -->
 
-<div id="innpakning">
-<!-- Header -->
+<div class="content">
+    
+    <!-- Header -->
+    <header>
+        <h1>Livet som student!</h1>
+    </header>
+    <!-- END header -->
+    
+    <main>
+        
+    <article class="article-text">
+            <div class="tekstbokser">
+                <h2>Student på Oslomet</h2>
+                <picture>
+                    <img alt=" "
+                        src=" "
+                        srcset=" "
+                        sizes=" ">
+                </picture>
 
+                <p> 
+                    Hva vil det si å være student? Er det vanskelig å få nye venner på studiet? 
+                    Hvordan er en vanlig dag eller uke for en student? Hva skjer utenom seminarene, 
+                    øvingene og forelesningene? Er fire av flere spørsmål mange nye studenter grubler på før studiestart. 
+                </p>
+                <p> 
+                    Studentlivet er en av de mest minnerike stadiene i vårt liv. 
+                    Fasen i studentlivet er nemlig begynnelsen på livet vårt. 
+                    I studentlivet lærer vi ikke kun av bøker, men også å utvikle følelsesmessig, fysisk, 
+                    filosofisk og ikke minst sosialt. 
+                </p>
+                <p> 
+                    Studentlivet på Oslomet består heldigvis ikke kun av seminarer, bøker og pugging. 
+                    I storbyen Oslo trenger vi ikke å kjede oss! Mange sosiale aktiviteter arrangeres stadig av blant annet fakultetene og studieorganisasjonene. 
+                    Slik sammenkomst bidrar til at man stadig blir kjent med flere og flere nye studenter.   
+                </p>
+            </div>
 
+            <div class="tekstbokser">
+                <h2>Studieområder i P35</h2>
+                <picture>
+                    <img 
+                        alt=" " 
+                        src=" "
+                        srcset=" "
+                        sizes=" "
+                    >
+                </picture>
+                <p>
+                    På Oslomet er vi heldige som har en stor og fin kantine i p35 som vi kan benytte oss av, når som helst på dagen. 
+                    I tillegg finnes det en rekke fine uteområder som trygt kan nytes i pausen mellom forelesningene. 
+                    Det er også mange kaféer og studentpuber ved Oslomet i Pilestredet, og ikke minst mange koselige beliggenheter å ta med matpakka.
+                </p>
+                <p>
+                    Datatorget i p35 er vårt andre hjem kan vi si. Vi tilbringer meste parten av tiden der, spesielt mye under eksamensperioden. 
+                    Det beste med datatorget er at den består av en rekke grupperom, som må reserves på forhånd til å kunne ta i bruk. 
+                </p>
+                <p>
+                    I bygget p35 har vi flere utvalg av studiekroker vi kan velge mellom. 
+                    Flere hjørner i dette bygget består av studenter som jobber med skolearbeid, 
+                    som er motiverende å se når man selv gjør det samme.
+                </p>
+            </div>
+            <div class="kildebokser">
+                <hr>
+                <p> Alle bildene vi har brukt her er tatt fra Oslomets bildearkiv </p>
+                <p>Linker til bildene vi har brukt: </p>
+                <p></p>
+                <p></p>
+            </div>
+    </article>
+    </main>
 
-
-</div>
-<!-- Footer -->
-<footer>
+    <!-- Footer -->
+    <footer>
     <div class="footer-grid-container" id="contact">
         <div>
             <h2>KONTAKT OSS PÅ MAIL:</h2>
@@ -66,9 +131,10 @@
             <iframe class="kart" alt="kart over oslomet" title="kart over oslomet" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.7273741535764!2d10.7357838!3d59.920071799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7be22c2035%3A0xf51095d184aa1954!2sPilestredet%2032%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1664790017038!5m2!1sno!2sno" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-</footer>
-
-<script type="text/javascript" src="navbar.js"></script>
+    </footer>
+    <!-- END footer -->
+    
+</div>
 
 </body>
 
