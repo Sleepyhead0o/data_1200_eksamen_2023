@@ -292,6 +292,8 @@ footer h2 {
     height: auto;
     max-width: 50%;
 }
+
+/* Legger til en margin under hvert listeelement for Ã¥ unngÃ¥ Ã¥ bruke linjeskift <br> */
 #tekst-nr-1 #tekst-nr-2 #h2Accessibility ul li {
     margin-bottom: 40px;
 }
