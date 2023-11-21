@@ -83,7 +83,7 @@ figcaption{
     left: 20px;
     font-size: 30px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 1;
 }
 
 .sidebar {
@@ -381,7 +381,7 @@ section {
     color: white;
 }
 
-.input-felt .ikon {
+.material-symbols-outlined {
     right: 8px;
     position: absolute;
     line-height: 57px;
@@ -447,24 +447,66 @@ section {
         left: -100%;
     }
 
-    .toggle-checkbox:checked + .toggle-label + .sidebar {
-        left: 0;
-    }
-
-    .toggle-checkbox:checked + .toggle-label + .sidebar + .content {
-        margin-left: 0;
-    }
-
     .sidebar > a {
         font-size: 44px;
         padding: 30px;
     }
+   
     .kart {
         width: 100% !important;
     }
     
 }
 
+@media screen and (max-width: 414px) {
+
+    .sidebar > a {
+        display: flex;
+        justify-content: center;
+        padding:25px 0px 20px 0px;
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    .tekstbokser picture img {
+        width:90vw;
+        display:flex;
+        justify-content: center;
+    }
+    .main {
+        font-size: 1em;
+        float: none; 
+        width: 100%;
+    }
+    .header h1 {
+        font-size:1.5em;
+    }
+}
+
+@media only screen and (min-width:414px) and (max-width:768px) {
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+    .header h1 {
+        font-size:1.5em;
+    }
+    .toggle-checkbox:checked + .toggle-label + .sidebar {
+        left: 0;
+    }
+    .toggle-checkbox:checked + .toggle-label + .sidebar + .content {
+        margin-left: 0;
+    }
+    
+    .tekstbokser picture {
+        display:flex;
+        justify-content: center;
+    }
+    .kart {
+        width: 100% !important;
+    }
+
+}
 /* Responsive accessibility CSS */
 
 @media screen and (max-width: 900px) {
@@ -473,6 +515,7 @@ section {
         max-width: 100%;
     }
 }
+
 /* Responsive accessibility CSS - end - */
 
 /* Responsive CSS - end - */
