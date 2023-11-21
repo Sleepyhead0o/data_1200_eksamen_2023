@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun Page</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body class="funPage">
@@ -20,6 +20,11 @@
 
 <!-- Sidebar -->
 <div class="sidebar">
+   <label for="toggle-sidebar" class="toggle-menu">
+        <span class="material-symbols-outlined">
+            cancel
+            </span>
+    </label>
     <div class="desktop-logo">
         <img class="logo" src="img/OsloMetLogo.png" alt="Oslometropolitan University's logo" />
     </div>
@@ -37,12 +42,16 @@
          <form action="">
             <h2 class="logginnTitle">Logg inn</h2>
             <div class="input-felt">
-                <span class="ikon"><ion-icon name="mail-outline"></ion-icon></span>
+                <span class="material-symbols-outlined">
+                    mail
+                    </span>
                 <input id="epost" type="epost" required>
                 <label for="epost">E-post</label>
             </div>
             <div class="input-felt">
-                <span class="ikon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <span class="material-symbols-outlined">
+                    lock
+                    </span>
                 <input id="passord" type="passord" required>
                 <label for="passord">Passord</label>
             </div>
