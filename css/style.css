@@ -233,6 +233,19 @@ footer h2 {
 }
 /* Index CSS - end - */
 
+/* Studentlivet CSS - start - */
+.article-text {
+    line-height: 2.0;
+    justify-content: center;
+    margin-bottom:3rem;
+
+}
+
+picture img {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+/* Studentlivet CSS - end - */
+
 /* Topical CSS - start - */
 
 .mega-div {
