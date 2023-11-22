@@ -303,6 +303,9 @@ footer h2 {
 /** inon-icon kodene i fun.html er kopiert fra https://ionic.io/ionicons **/
 
 section {
+/** Bildet er hentet fra Oslomets bildearkiv: 
+https://foto.oslomet.no/fotoweb/archives/5007-Arkitektur-ved-OsloMet/Folder%2052/CampusSommer-75.jpg.info#c=%2Ffotoweb%2Farchives%2F5007-Arkitektur-ved-OsloMet%2F **/
+
     display: flex;
     position: relative;
     width: 100%;
