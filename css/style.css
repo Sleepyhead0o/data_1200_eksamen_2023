@@ -70,7 +70,9 @@ figcaption{
 /* Felles CSS - end - */ 
 
 /* Navigasjonsbar CSS - start - */
-/* CSS kode fra W3S - off-canvas menu - endret og lagt til nye funksjoner*/  
+/* CSS kode fra W3S - off-canvas menu - endret og lagt til nye funksjoner - fjernet JS og lagt til checkbox for å 
+kunne åpne og lukke sidebaren */ 
+/* https://www.w3schools.com/howto/howto_js_off-canvas.asp */
 
 .toggle-checkbox {
     display: none;
